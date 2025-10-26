@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shadov Resolution</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="titlebar">
+      <div id="title">Shadov Resolution</div>
+      <div id="window-controls">
+        <button id="minimize">–</button>
+        <button id="close">×</button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <label>Width (px)</label>
+        <input id="width" type="number" placeholder="1920" />
+
+        <label>Height (px)</label>
+        <input id="height" type="number" placeholder="1080" />
+
+        <label>Refresh Rate (Hz)</label>
+        <input id="freq" type="number" placeholder="60" />
+
+        <button id="apply">Apply</button>
+      </div>
+
+      <div class="container">
+        <h3>Profiles</h3>
+        <select id="profiles"></select>
+        <input id="profileName" type="text" placeholder="Profile name" />
+        <div class="profile-buttons">
+          <button id="saveProfile">Save</button>
+          <button id="loadProfile">Load</button>
+          <button id="deleteProfile">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="status"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

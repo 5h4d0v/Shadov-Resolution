@@ -1,0 +1,38 @@
+{
+  "name": "shadov-resolution",
+  "version": "1.0.0",
+  "description": "Resolution changer app by Shadov",
+  "author": "5had0v",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-addon": "node-gyp rebuild --directory native",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.5.0"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "node-gyp": "^11.2.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.shadov.resolution",
+    "productName": "Shadov Resolution",
+    "copyright": "© 2025 5had0v",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Shadov Resolution"
+    },
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}

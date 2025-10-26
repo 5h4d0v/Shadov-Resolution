@@ -1,0 +1,14 @@
+[
+  {
+    "name": "cs2",
+    "width": 1080,
+    "height": 1080,
+    "freq": 144
+  },
+  {
+    "name": "normal",
+    "width": 1920,
+    "height": 1080,
+    "freq": 144
+  }
+]

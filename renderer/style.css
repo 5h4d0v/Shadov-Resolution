@@ -1,0 +1,192 @@
+/* === GLOBAL === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0e0e10;
+  color: #e3e3e8;
+  font-family: "Segoe UI", "Inter", sans-serif;
+  user-select: none;
+}
+
+/* === CUSTOM TOPBAR === */
+#titlebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background-color: rgba(25, 25, 30, 0.85);
+  backdrop-filter: blur(10px);
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+  -webkit-app-region: drag;
+  z-index: 1000;
+  border-bottom: 1px solid #2a2a2e;
+}
+
+#title {
+  user-select: none;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #bcbcf0;
+}
+
+#window-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-app-region: no-drag;
+}
+
+#window-controls button {
+  width: 46px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-family: "Segoe UI Symbol", "Segoe UI", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+#window-controls button:hover {
+  background-color: rgba(140, 120, 255, 0.1);
+  color: #d7d7ff;
+}
+
+#close:hover {
+  background-color: #d40000;
+  color: white;
+}
+
+/* === LAYOUT === */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px; /* miejsce na topbar */
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+/* === PANELS === */
+.container {
+  background: rgba(25, 25, 35, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(130, 130, 160, 0.15);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(80, 70, 200, 0.08);
+  width: 280px;
+  min-width: 260px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px rgba(100, 90, 255, 0.18);
+  border-color: rgba(160, 160, 255, 0.25);
+}
+
+/* === LABELS === */
+label,
+h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #bcbcf0;
+}
+
+/* === INPUTS & SELECTS === */
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  outline: none;
+  background: rgba(40, 40, 50, 0.8);
+  color: #e3e3e8;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: rgba(120, 100, 255, 0.6);
+  box-shadow: 0 0 6px rgba(120, 100, 255, 0.3);
+}
+
+/* === BUTTONS === */
+button {
+  background-color: #5a57ff;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #7775ff;
+  transform: scale(1.03);
+}
+
+.profile-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 5px;
+}
+
+/* === STATUS TEXT === */
+#status {
+  margin-top: 25px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+  color: #a0a0ff;
+  text-shadow: 0 0 3px rgba(100, 100, 255, 0.3);
+}
+
+/* === REMOVE NUMBER INPUT SPINNERS === */
+
+/* Chrome, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
