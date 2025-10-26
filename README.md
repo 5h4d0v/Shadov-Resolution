@@ -42,7 +42,7 @@ No Node.js or external dependencies are required. Everything is packaged inside 
 Clone the repository and build locally:
 
 ```
-git clone https://github.com/<your-username>/ShadovResolution.git
+git clone https://github.com/5h4d0v/ShadovResolution.git
 cd ShadovResolution
 npm install
 npm run build-addon
