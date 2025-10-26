@@ -60,7 +60,7 @@ npm run dist
 ## About
 
 Created by **5had0v**  
-Designed for simplicity, performance, and consistency across all Shadov software.
+Designed for simplicity, performance, and consistency.
 
 ---
 
