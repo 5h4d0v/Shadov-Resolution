@@ -7,20 +7,20 @@ Built using Electron and a C++ addon for full system-level control.
 
 ## Features
 
-- Change screen resolution and refresh rate instantly  
-- Save and manage custom resolution profiles  
-- Apply profiles directly without manual input  
-- Custom dark UI consistent with other Shadov tools  
-- Electron + C++ bridge for native performance and reliability  
+- Change screen resolution and refresh rate instantly
+- Save and manage custom resolution profiles
+- Apply profiles directly without manual input
+- Custom dark UI consistent with other Shadov tools
+- Electron + C++ bridge for native performance and reliability
 
 ---
 
 ## Tech Stack
 
-- **Electron** — application framework  
-- **HTML / CSS / JavaScript** — frontend  
-- **Node-Addon-API / C++** — native backend  
-- **electron-builder** — packaging and Windows installer  
+- **Electron** — application framework
+- **HTML / CSS / JavaScript** — frontend
+- **Node-Addon-API / C++** — native backend
+- **electron-builder** — packaging and Windows installer
 
 ---
 
@@ -28,10 +28,10 @@ Built using Electron and a C++ addon for full system-level control.
 
 ### Windows
 
-1. Go to the [Releases](../../releases) section  
-2. Download `Shadov Resolution Setup.exe`  
-3. Run the installer  
-4. Start the application from the desktop or Start Menu  
+1. Go to the [Releases](../../releases) section
+2. Download `Shadov Resolution Setup.exe`
+3. Run the installer
+4. Start the application from the desktop or Start Menu
 
 No Node.js or external dependencies are required. Everything is packaged inside the installer.
 
